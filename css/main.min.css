@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'raleway-grid';
-  src: url("../fonts/RalewayRegular.woff") format("woff"); }
+  font-family: 'tahoma-reg';
+  src: url("../fonts/tahoma.ttf") format("ttf"); }
 
 @font-face {
   font-family: 'raleway-grid';
@@ -444,11 +444,49 @@ body {
   display: -ms-flexbox;
   display: flex; }
 
-.box {
-  width: 500px;
-  height: 200px;
+.container {
+  max-width: 80%;
   margin: auto;
   border: 1px solid red; }
+
+header .logo {
+  padding: 10px 20px;
+  background-color: #535353;
+  border-right: 2px dashed white; }
+
+header .preference {
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#600001), to(#A00000));
+  background: -webkit-linear-gradient(left, #600001, #A00000);
+  background: -o-linear-gradient(left, #600001, #A00000);
+  background: linear-gradient(to right, #600001, #A00000);
+  color: white;
+  font-family: tahoma-reg, sans-serif;
+  font-size: 10px; }
+  header .preference p {
+    margin: 0; }
+  header .preference > div {
+    padding-top: 15px;
+    width: 33%;
+    height: 70%;
+    text-align: center; }
+    header .preference > div:first-child {
+      text-align: right;
+      padding-right: 15px;
+      border-right: 2px dashed #B28D8D; }
+      header .preference > div:first-child .inCart {
+        font-size: 12px; }
+    header .preference > div:last-child {
+      text-align: left;
+      padding-left: 15px;
+      border-left: 2px dashed #B28D8D; }
+  header .preference .flags {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100px;
+    margin: auto; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */

@@ -5,12 +5,44 @@
 
 // Пользовательские стили
 
-.box
-	width: 500px
-	height: 200px
+.container
+	max-width: 80%
 	margin: auto
 	border: 1px solid red
 
+header	
+	.logo
+		padding: 10px 20px
+		background-color: $grey
+		border-right: 2px dashed white
+		
+	.preference
+		p
+			margin: 0
+		width: 100%
+		background: linear-gradient(to right, #600001, #A00000)
+		color: white
+		font-family: tahoma-reg, sans-serif
+		font-size: 10px
+		>div
+			padding-top: 15px
+			width: 33%
+			height: 70%
+			text-align: center
+			&:first-child
+				text-align: right
+				padding-right: 15px
+				border-right: 2px dashed #B28D8D
+				.inCart
+					font-size: 12px
+			&:last-child
+				text-align: left
+				padding-left: 15px
+				border-left: 2px dashed #B28D8D
+		.flags
+			justify-content: space-between
+			width: 100px
+			margin: auto
 
-
+				
 @import "media" // Всегда в конце
