@@ -6,7 +6,7 @@
 // Пользовательские стили
 
 .container
-	max-width: 80%
+	max-width: 780px
 	margin: auto
 	border: 1px solid red
 
@@ -20,6 +20,7 @@ header
 		p
 			margin: 0
 		width: 100%
+		min-width: 410px
 		background: linear-gradient(to right, #600001, #A00000)
 		color: white
 		font-family: tahoma-reg, sans-serif
@@ -43,6 +44,73 @@ header
 			justify-content: space-between
 			width: 100px
 			margin: auto
+nav
+	ul
+		list-style-image: url(../img/bullet.png)
+		font-family: MyriadPro
+		font-size: 14px
+		width: 240px
+		li
+			border-bottom: 2px dotted #DDDDDD
+		a	
+			display: inline-block
+			text-decoration: none
+			color: #1F1F1F
+			&:hover, &focus, &:active
+				color: #8C0000
 
-				
+.slide
+	position: relative
+	width: 100%
+	border: 1px solid grey
+	text-align: right
+	padding-right: 40px
+	h2
+		font-family: MyriadPro
+		font-size: 38px
+		line-height: 20px
+		font-weight: 200
+		margin: 0
+		padding-top: 30px
+		color: #9F0000
+		span
+			font-family: MyriadPro-It
+			color: #CBCBCB
+	h3
+		font-family: OfficinaSansStd-Book
+		font-size: 14px
+		margin: 0
+		color: #1F1F1F
+	.offer
+		position: relative
+		background-color: #EFEFEF
+		margin-top: 20px
+		margin-left: auto
+		width: 410px
+		font-size: 14px
+		padding: 5px 0
+		p
+			margin: 0
+			text-align: left
+			padding-left: 140px
+			line-height: 1em
+			span
+				color: #9F0000
+		img
+			position: absolute
+			right: -25px
+			bottom: -5px
+
+	.blured
+		position: absolute
+		left: 100px
+		bottom: 0px
+		z-index: 1
+	.sharped
+		position: absolute
+		left: -23px
+		bottom: 0px
+		z-index: 2	
+
+			
 @import "media" // Всегда в конце

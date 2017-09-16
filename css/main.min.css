@@ -1,20 +1,18 @@
 @font-face {
   font-family: 'tahoma-reg';
-  src: url("../fonts/tahoma.ttf") format("ttf"); }
+  src: url("../fonts/tahoma.ttf"); }
 
 @font-face {
-  font-family: 'raleway-grid';
-  src: url("../fonts/RalewayBold.woff") format("woff");
-  font-weight: bold; }
+  font-family: 'MyriadPro';
+  src: url("../fonts/MyriadPro-Regular.otf"); }
 
 @font-face {
-  font-family: 'raleway-grid';
-  src: url("../fonts/RalewayExtraBold.woff") format("woff");
-  font-weight: 800; }
+  font-family: 'MyriadPro-It';
+  src: url("../fonts/MyriadPro-It.otf"); }
 
 @font-face {
-  font-family: 'intro-grid';
-  src: url("../fonts/IntroRegular.woff") format("woff"); }
+  font-family: 'OfficinaSansStd-Book';
+  src: url("../fonts/OfficinaSansStd-Book.otf"); }
 
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -445,7 +443,7 @@ body {
   display: flex; }
 
 .container {
-  max-width: 80%;
+  max-width: 780px;
   margin: auto;
   border: 1px solid red; }
 
@@ -456,6 +454,7 @@ header .logo {
 
 header .preference {
   width: 100%;
+  min-width: 410px;
   background: -webkit-gradient(linear, left top, right top, from(#600001), to(#A00000));
   background: -webkit-linear-gradient(left, #600001, #A00000);
   background: -o-linear-gradient(left, #600001, #A00000);
@@ -487,6 +486,72 @@ header .preference {
             justify-content: space-between;
     width: 100px;
     margin: auto; }
+
+nav ul {
+  list-style-image: url(../img/bullet.png);
+  font-family: MyriadPro;
+  font-size: 14px;
+  width: 240px; }
+  nav ul li {
+    border-bottom: 2px dotted #DDDDDD; }
+  nav ul a {
+    display: inline-block;
+    text-decoration: none;
+    color: #1F1F1F; }
+    nav ul a:hover, nav ul afocus, nav ul a:active {
+      color: #8C0000; }
+
+.slide {
+  position: relative;
+  width: 100%;
+  border: 1px solid grey;
+  text-align: right;
+  padding-right: 40px; }
+  .slide h2 {
+    font-family: MyriadPro;
+    font-size: 38px;
+    line-height: 20px;
+    font-weight: 200;
+    margin: 0;
+    padding-top: 30px;
+    color: #9F0000; }
+    .slide h2 span {
+      font-family: MyriadPro-It;
+      color: #CBCBCB; }
+  .slide h3 {
+    font-family: OfficinaSansStd-Book;
+    font-size: 14px;
+    margin: 0;
+    color: #1F1F1F; }
+  .slide .offer {
+    position: relative;
+    background-color: #EFEFEF;
+    margin-top: 20px;
+    margin-left: auto;
+    width: 410px;
+    font-size: 14px;
+    padding: 5px 0; }
+    .slide .offer p {
+      margin: 0;
+      text-align: left;
+      padding-left: 140px;
+      line-height: 1em; }
+      .slide .offer p span {
+        color: #9F0000; }
+    .slide .offer img {
+      position: absolute;
+      right: -25px;
+      bottom: -5px; }
+  .slide .blured {
+    position: absolute;
+    left: 100px;
+    bottom: 0px;
+    z-index: 1; }
+  .slide .sharped {
+    position: absolute;
+    left: -23px;
+    bottom: 0px;
+    z-index: 2; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
